@@ -1,0 +1,52 @@
+
+
+
+.Ronaldo  {
+  border: 5px solid rgb(171, 22, 22);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 100px;
+  color: #472b12;
+  text-shadow: 12px 12px 12px #eadada4d;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+text-align: center;
+color:rgb(64, 60, 60);
+font-size: 60px;
+}
+
+.text-frame {
+border: 3px solid black;
+  text-align: center;
+  
+}
+
+body {
+  background-color: rgba(105,130,40,0.83);
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.05) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+
+.photo-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.ronaldo-img {
+ display: block;      
+ width: 100%;
+ height: 100%;
+ object-fit: cover; /* картинка масштабована, обрізає зайве */
+  
+}
+
