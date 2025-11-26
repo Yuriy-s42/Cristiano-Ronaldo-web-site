@@ -1,52 +1,47 @@
+body {
+  background-color: rgb(74, 74, 61);
+}
+
+  .title {
+    border-radius: 15px;
+  background-color: #dee0ce;   /* темний фон */
+  color: rgb(146, 132, 54);                /* білий текст */
+  padding: 10px 0px;          /* відступи всередині */
+  text-align: center;          /* текст по центру */
+  font-size: 50px;             /* великий заголовок */
+  font-weight: 700;            /* жирний */
+  letter-spacing: 4px;         /* розрядка між літерами */
+  text-transform: uppercase;   /* великі літери */
+}
 
 
 
-.Ronaldo  {
-  border: 5px solid rgb(171, 22, 22);
-  border-radius: 15px;
+.career {
   text-align: center;
-  font-size: 100px;
-  color: #472b12;
-  text-shadow: 12px 12px 12px #eadada4d;
-  font-family: 'Poppins', sans-serif;
 }
 
-p {
-text-align: center;
-color:rgb(64, 60, 60);
-font-size: 60px;
+.manutd {
+  text-align: center
 }
 
-.text-frame {
-border: 3px solid black;
+.about-ronaldo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ronaldo-title {
+  display: block;
+width: 100%;
+height: auto;
+
+ 
+
+}
+.biography {
+  font-size: 18px;
   text-align: center;
   
-}
-
-body {
-  background-color: rgba(105,130,40,0.83);
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,0.05),
-    rgba(255,255,255,0.05) 10px,
-    transparent 10px,
-    transparent 20px
-  );
-}
-
-
-.photo-box {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.ronaldo-img {
- display: block;      
- width: 100%;
- height: 100%;
- object-fit: cover; /* картинка масштабована, обрізає зайве */
   
 }
 
