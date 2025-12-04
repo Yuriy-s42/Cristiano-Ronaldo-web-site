@@ -1,0 +1,87 @@
+.career {
+  text-align: center;
+  color: #8c8a7b9c;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+  
+}
+.career:hover {
+  transform: scale(1.25);
+  color: #d1cbcb;
+}
+
+.sport-career {
+  display: block;
+  border: 1px solid rgb(255, 241, 229);
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+.sport-career.visible {
+  opacity: 1;
+
+}
+
+
+.achievement {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #8c8a7b9c;
+  cursor: pointer;
+  text-align: center;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.achievement:hover {
+  transform: scale(1.25);
+  color:#d1cbcb;
+}
+
+/* Планшети (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .career {
+    font-size: 32px;
+  }
+  .sport-career {
+    transform: translateX(-30px);
+  }
+  .achievement {
+    font-size: 15px;
+  }
+}
+
+/* Мобільні телефони (до 767px) */
+@media (max-width: 767px) {
+  .career {
+    font-size: 24px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .career:hover {
+    transform: scale(1.15);
+  }
+
+  .sport-career {
+    transform: translateX(-15px);
+    width: 100%;
+  }
+
+  .achievement {
+    font-size: 14px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .achievement:hover {
+    transform: scale(1.1);
+  }
+}

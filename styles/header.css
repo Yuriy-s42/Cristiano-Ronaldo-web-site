@@ -1,39 +1,45 @@
 body {
-  background-color: rgb(8, 8, 8);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 51, 45) 10%,      /* темно-синій */
+    #070606 20%,       /* чорний */
+    rgb(64, 64, 33) 40%,
+    rgb(48, 4, 4) 60% , 
+    rgb(65, 65, 65) 80% ,
+    rgb(255, 255, 255) 90%     /* бордово-темний */
+  );
 }
+
+
 
 
 .nav-list {
   display: flex;
   position: relative;
-  margin-left: 700px;
+  bottom: 40px;
+  margin-left: 650px;
   gap: 30px;
-  color: #dee0ce;
   list-style: none;
-  font-size: 16px;
+  font-size: 15px;
   transition: background-color 0.9s ease;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.nav-list:hover {
+  transform: scale(1.25);
+  color: #5555a1;
 }
 .nav-item a:hover {
-  color: #d4f437;            /* колір тексту */
+  transform: scale(1.25);
+  color: #ffffff;            /* колір тексту */
 }
 
 .nav-item a{
-  color: #ffffff;
+  color: #24b2a2;
+  font-family: 'Arial', sans-serif
+  
 
-}
-
-
-
-
-
-.career {
-  text-align: center;
-  color: #fcfafa;
-}
-
-.achievement {
-  color: #fcfafa;
-  text-align: center;
 }
 
 .sporting {
@@ -42,10 +48,7 @@ body {
 }
 
 
-.manutd {
-  color: #fcfafa;
-  text-align: center
-}
+
 
 .about-ronaldo {
   display: flex;
@@ -54,25 +57,100 @@ body {
 }
 
 .ronaldo-title {
-  display: block;
+display: block;
 width: 100%;
 height: auto;
+ border: 2px solid rgb(250, 248, 255);
 
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
 }
+.ronaldo-title.visible {
+  opacity: 1;
+}
+
 
 .biography {
   font-size: 18px;
   text-align: center;
-  color: rgb(206, 213, 232);
+  color: rgb(20, 61, 59);
   text-decoration: dashed;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease
 }
+
+.biography:hover {
+  transform: scale(1.15);
+  color: #c9c9d1;
+}
+
 .video-ronaldo {
   display: block;
   margin-left:400px;
   margin-top: 30px;
-  border: 1px solid #e5f7af;
+  border: 2px solid #e8e9e6;
   border-radius: 15px;
-  box-shadow: 10px 2px 10px rgba(228, 220, 220, 0.5);
+  box-shadow: 1px 2px 1px rgba(251, 230, 230, 0.5);
+}
 
+/* 📱 телефон */
+@media (max-width: 768px) {
+
+  .nav-list {
+    margin-left: 0;
+    justify-content: center;
+    bottom: 0;
+    gap: 15px;
+  }
+
+  .about-ronaldo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ronaldo-title {
+    width: 100%;
+  }
+
+  .video-ronaldo {
+    margin-left: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+/* 🟦 планшет */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .nav-list {
+    margin-left: 150px;
+    gap: 20px;
+  }
+
+  .about-ronaldo {
+    flex-direction: row;
+  }
+
+  .video-ronaldo {
+    margin-left: 150px;
+    max-width: 500px;
+  }
+}
+
+
+/* 🟩 компʼютер */
+@media (min-width: 1024px) {
+  .nav-list {
+    margin-left: 650px;
+  }
+
+  .video-ronaldo {
+    margin-left: 400px;
+  }
 }

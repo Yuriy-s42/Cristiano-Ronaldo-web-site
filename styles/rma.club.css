@@ -1,0 +1,113 @@
+.rma-career {
+  text-align: center;
+  color: #8c8a7b9c;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.rma-career:hover {
+    transform: scale(1.25);
+   color: #d1cbcb;
+}
+
+.rma-club {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 15px;
+  color: #4848469c;
+  text-align: center;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.rma-club:hover {
+  transform: scale(1.25);
+  color:#0d0d0d;
+}
+.rmacr7_imag {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(255, 241, 229);
+
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+.rmacr7_imag.visible {
+  opacity: 1;
+}
+
+/* комп'ютер */
+@media (min-width: 1024px) {
+  .rma-career {
+    font-size: 55px;
+  }
+
+  .rma-club {
+    font-size: 22px;
+    padding-top: 25px;
+  }
+
+  .rmacr7_imag {
+    max-width: 60%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .rma-career {
+    font-size: 55px;
+  }
+  .rma-club {
+    font-size: 22px;
+    padding-top: 25px;
+  }
+  .rmacr7_imag {
+    max-width: 60%;
+  }
+}
+
+/* Планшети (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .rma-career {
+    font-size: 45px;
+  }
+  .rma-club {
+    font-size: 19px;
+    padding-top: 20px;
+  }
+  .rmacr7_imag {
+    max-width: 80%;
+    transform: translateX(-30px);
+  }
+}
+
+/* Мобільні телефони (до 767px) */
+@media (max-width: 767px) {
+  .rma-career {
+    font-size: 28px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .rma-career:hover {
+    transform: scale(1.15);
+  }
+
+  .rma-club {
+    font-size: 14px;
+    padding-top: 10px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .rma-club:hover {
+    transform: scale(1.1);
+  }
+
+  .rmacr7_imag {
+    max-width: 100%;
+    transform: translateX(-15px);
+  }
+}

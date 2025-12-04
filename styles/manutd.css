@@ -1,0 +1,62 @@
+.manutd-cr7 {
+  text-align: center;
+  color: #8c8a7b9c;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.manutd-cr7:hover {
+    transform: scale(1.25);
+   color: #d1cbcb;
+}
+
+.manutd-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgb(255, 255, 255);
+
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+.manutd-photo.visible {
+  opacity: 1;
+
+}
+
+
+
+.manutd-season {
+  font-size: 17px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #8c8a7b9c;
+  cursor: pointer;
+  text-align: center;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.manutd-season:hover {
+ transform: scale(1.25);
+  color:#d1cbcb;
+}
+
+
+/* Адаптив для мобільних (до 767px) */
+@media (max-width: 767px) {
+  .manutd-cr7 {
+    font-size: 24px;
+  }
+  .manutd-season {
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  .manutd-photo {
+    transform: translateX(-15px);
+  }
+}

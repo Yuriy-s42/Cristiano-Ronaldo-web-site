@@ -1,0 +1,84 @@
+.first-club {
+  text-align: center;
+  color: #8c8a7b9c;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.first-club:hover {
+  transform: scale(1.25);
+  color: #d1cbcb;
+}
+
+.sporting-first {
+  display: block;
+  border: 1px solid rgb(255, 241, 229);
+  width: 100%;
+  height: auto;
+
+    opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+  will-change: transform, opacity;
+}
+.sporting-first.visible {
+  opacity: 1;
+
+}
+
+
+.sporting {
+  font-size: 17px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #8c8a7b9c;
+  cursor: pointer;
+  text-align: center;
+  transition: 
+  transform 0.8s ease,
+  color 0.8s ease;
+}
+.sporting:hover {
+ transform: scale(1.25);
+  color:#d1cbcb;
+}
+
+/* Планшети (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .first-club {
+    font-size: 32px;
+  }
+  .sporting-first {
+    transform: translateX(-30px);
+  }
+  .sporting {
+    font-size: 15px;
+  }
+}
+
+/* Мобільні телефони (до 767px) */
+@media (max-width: 767px) {
+  .first-club {
+    font-size: 24px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .first-club:hover {
+    transform: scale(1.15);
+  }
+
+  .sporting-first {
+    transform: translateX(-15px);
+    width: 100%;
+  }
+
+  .sporting {
+    font-size: 14px;
+    padding-top: 15px;
+    transition: transform 0.5s ease, color 0.5s ease;
+  }
+  .sporting:hover {
+    transform: scale(1.1);
+  }
+}
